@@ -9,7 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- DaisyUI (CDN CSS) -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font Awesome -->
     <link
@@ -35,11 +39,25 @@
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
                 </svg>
               </div>
-              <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+              >
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./allproducts.html">Products</a></li>
                 <li><a href="#">About</a></li>
@@ -59,28 +77,47 @@
           </div>
 
           <div class="navbar-end">
-            <label for="cart-drawer" class="btn btn-ghost btn-circle" aria-label="Open cart">
+            <label
+              for="cart-drawer"
+              class="btn btn-ghost btn-circle"
+              aria-label="Open cart"
+            >
               <div class="indicator">
                 <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                <span id="cart-count" class="badge badge-sm indicator-item hidden">0</span>
+                <span
+                  id="cart-count"
+                  class="badge badge-sm indicator-item hidden"
+                  >0</span
+                >
               </div>
             </label>
           </div>
         </div>
 
         <!-- Hero Section -->
-        <div class="hero min-h-[75vh]" style="background-image: url('Assets/banner-image.png')">
+        <div
+          class="hero min-h-[75vh]"
+          style="background-image: url(&quot;Assets/banner-image.png&quot;)"
+        >
           <div class="hero-overlay bg-black/40"></div>
           <div class="hero-content text-neutral-content text-center w-full">
             <div class="max-w-7xl w-full px-6">
               <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="text-left">
-                  <h1 class="text-4xl md:text-5xl text-white font-extrabold">Best Collection For You</h1>
+                  <h1 class="text-4xl md:text-5xl text-white font-extrabold">
+                    Best Collection For You
+                  </h1>
                   <p class="text-white mt-3 max-w-[520px]">
-                    Discover the latest trends in fashion, electronics and more. Shop with confidence and style at SwiftCart.
+                    Discover the latest trends in fashion, electronics and more.
+                    Shop with confidence and style at SwiftCart.
                   </p>
                   <div class="mt-6">
-                    <button id="shop-now" class="btn btn-primary">Shop Now</button>
+                    <button
+                      id="shop-now"
+                      class="px-2 py-1 lg:px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                    >
+                      Shop Now
+                    </button>
                   </div>
                 </div>
                 <div></div>
@@ -93,41 +130,79 @@
         <section class="bg-gray-50 py-20">
           <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-14">
-              <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Choose Us</h2>
-              <p class="mt-4 text-gray-500 max-w-2xl mx-auto">We provide the best shopping experience with top-notch services.</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                Why Choose Us
+              </h2>
+              <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+                We provide the best shopping experience with top-notch services.
+              </p>
             </div>
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
-                <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-indigo-500 text-white text-3xl shadow-lg">
+              <div
+                class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center"
+              >
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-indigo-500 text-white text-3xl shadow-lg"
+                >
                   <i class="fa-solid fa-truck"></i>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">Fast Delivery</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Get your orders delivered to your doorstep quickly and efficiently.</p>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Fast Delivery
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Get your orders delivered to your doorstep quickly and
+                  efficiently.
+                </p>
               </div>
 
-              <div class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
-                <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-purple-500 text-white text-3xl shadow-lg">
+              <div
+                class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center"
+              >
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-purple-500 text-white text-3xl shadow-lg"
+                >
                   <i class="fa-solid fa-headphones"></i>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">24/7 Support</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Our support team is available around the clock to assist you.</p>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  24/7 Support
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Our support team is available around the clock to assist you.
+                </p>
               </div>
 
-              <div class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
-                <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-green-500 text-white text-3xl shadow-lg">
+              <div
+                class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center"
+              >
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-green-500 text-white text-3xl shadow-lg"
+                >
                   <i class="fa-solid fa-shield-halved"></i>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">Secure Payment</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Experience safe and secure transactions with our encrypted payment systems.</p>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Secure Payment
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Experience safe and secure transactions with our encrypted
+                  payment systems.
+                </p>
               </div>
 
-              <div class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
-                <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-blue-500 text-white text-3xl shadow-lg">
+              <div
+                class="relative bg-gray-100 pt-14 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center"
+              >
+                <div
+                  class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-2xl bg-blue-500 text-white text-3xl shadow-lg"
+                >
                   <i class="fa-solid fa-rotate"></i>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">Easy Returns</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Not satisfied? Return your products easily within 30 days.</p>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Easy Returns
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Not satisfied? Return your products easily within 30 days.
+                </p>
               </div>
             </div>
           </div>
@@ -137,11 +212,18 @@
         <section class="bg-white py-20">
           <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-between gap-4 mb-8">
-              <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Trending Now</h2>
-              <a class="btn btn-outline btn-sm" href="./allproducts.html">View all</a>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+                Trending Now
+              </h2>
+              <a class="btn btn-outline btn-sm" href="./allproducts.html"
+                >View all</a
+              >
             </div>
 
-            <div id="products" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+            <div
+              id="products"
+              class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+            ></div>
           </div>
         </section>
 
@@ -152,15 +234,22 @@
               <div class="md:col-span-4">
                 <h2 class="text-2xl font-bold text-white">SwiftCart</h2>
                 <p class="mt-4 text-gray-400 text-sm">
-                  Your one-stop destination for trending products at the best price.
+                  Your one-stop destination for trending products at the best
+                  price.
                 </p>
               </div>
 
               <div class="md:col-span-3">
                 <h3 class="text-white font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2 text-sm">
-                  <li><a href="./index.html" class="hover:text-white">Home</a></li>
-                  <li><a href="./allproducts.html" class="hover:text-white">Products</a></li>
+                  <li>
+                    <a href="./index.html" class="hover:text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="./allproducts.html" class="hover:text-white"
+                      >Products</a
+                    >
+                  </li>
                   <li><a href="#" class="hover:text-white">About</a></li>
                   <li><a href="#" class="hover:text-white">Contact</a></li>
                 </ul>
@@ -168,15 +257,23 @@
 
               <div class="md:col-span-5">
                 <h3 class="text-white font-semibold mb-4">Newsletter</h3>
-                <p class="text-sm text-gray-400">Subscribe to get the latest updates and offers.</p>
+                <p class="text-sm text-gray-400">
+                  Subscribe to get the latest updates and offers.
+                </p>
                 <div class="mt-4 flex gap-3">
-                  <input type="email" placeholder="Your email" class="input input-bordered w-full" />
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    class="input input-bordered w-full"
+                  />
                   <button class="btn btn-primary">Subscribe</button>
                 </div>
               </div>
             </div>
 
-            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
+            <div
+              class="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-500"
+            >
               © <span id="year"></span> SwiftCart. All rights reserved.
             </div>
           </div>
@@ -186,7 +283,12 @@
         <dialog id="product_modal" class="modal">
           <div class="modal-box max-w-3xl">
             <form method="dialog">
-              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" aria-label="Close">✕</button>
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                aria-label="Close"
+              >
+                ✕
+              </button>
             </form>
             <div id="product-modal-body"></div>
           </div>
@@ -218,8 +320,12 @@
               <span id="cart-total" class="text-xl font-extrabold">$0.00</span>
             </div>
             <div class="mt-4 flex gap-2">
-              <button id="clear-cart" class="btn btn-outline btn-sm flex-1">Clear</button>
-              <button class="btn btn-primary btn-sm flex-1" type="button">Checkout</button>
+              <button id="clear-cart" class="btn btn-outline btn-sm flex-1">
+                Clear
+              </button>
+              <button class="btn btn-primary btn-sm flex-1" type="button">
+                Checkout
+              </button>
             </div>
           </div>
         </aside>
@@ -227,7 +333,7 @@
     </div>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
     <!-- Scripts (order matters) -->
