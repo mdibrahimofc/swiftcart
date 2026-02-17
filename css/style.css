@@ -1,0 +1,10 @@
+/* Small extras that are easier in plain CSS */
+
+/* Tailwind CDN does not always ship with line-clamp utilities.
+   This keeps your UI identical across environments. */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
