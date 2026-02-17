@@ -9,7 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- DaisyUI (CDN CSS) -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font Awesome -->
     <link
@@ -33,11 +37,25 @@
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
                 </svg>
               </div>
-              <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+              >
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./allproducts.html">Products</a></li>
                 <li><a href="#">About</a></li>
@@ -57,10 +75,18 @@
           </div>
 
           <div class="navbar-end">
-            <label for="cart-drawer" class="btn btn-ghost btn-circle" aria-label="Open cart">
+            <label
+              for="cart-drawer"
+              class="btn btn-ghost btn-circle"
+              aria-label="Open cart"
+            >
               <div class="indicator">
                 <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                <span id="cart-count" class="badge badge-sm indicator-item hidden">0</span>
+                <span
+                  id="cart-count"
+                  class="badge badge-sm indicator-item hidden"
+                  >0</span
+                >
               </div>
             </label>
           </div>
@@ -69,12 +95,20 @@
         <!-- Page Header -->
         <header class="bg-white border-b border-base-200">
           <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div
+              class="flex flex-col md:flex-row md:items-end md:justify-between gap-4"
+            >
               <div>
-                <h1 class="text-3xl md:text-4xl font-extrabold">All Products</h1>
-                <p class="mt-2 opacity-70">Browse products and filter by category.</p>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-center">
+                  Our Products
+                </h1>
+                <p class="mt-2 opacity-70">
+                  Browse products and filter by category.
+                </p>
               </div>
-              <a href="./index.html" class="btn btn-outline btn-sm">Back to Home</a>
+              <a href="./index.html" class="btn btn-outline btn-sm"
+                >Back to Home</a
+              >
             </div>
 
             <!-- Category Buttons -->
@@ -86,7 +120,10 @@
 
         <!-- Products Grid -->
         <main class="max-w-7xl mx-auto px-6 py-12">
-          <div id="products-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+          <div
+            id="products-grid"
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          ></div>
         </main>
 
         <!-- Footer -->
@@ -100,7 +137,12 @@
         <dialog id="product_modal" class="modal">
           <div class="modal-box max-w-3xl">
             <form method="dialog">
-              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" aria-label="Close">✕</button>
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                aria-label="Close"
+              >
+                ✕
+              </button>
             </form>
             <div id="product-modal-body"></div>
           </div>
@@ -132,8 +174,12 @@
               <span id="cart-total" class="text-xl font-extrabold">$0.00</span>
             </div>
             <div class="mt-4 flex gap-2">
-              <button id="clear-cart" class="btn btn-outline btn-sm flex-1">Clear</button>
-              <button class="btn btn-primary btn-sm flex-1" type="button">Checkout</button>
+              <button id="clear-cart" class="btn btn-outline btn-sm flex-1">
+                Clear
+              </button>
+              <button class="btn btn-primary btn-sm flex-1" type="button">
+                Checkout
+              </button>
             </div>
           </div>
         </aside>
@@ -141,7 +187,7 @@
     </div>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
     <!-- Scripts -->
